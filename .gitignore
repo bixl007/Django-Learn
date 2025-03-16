@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Django-specific files
+db.sqlite3
+*.sqlite3
+*.log
+
+# Static files
+staticfiles/
+static/
+
+# Media files (if any)
+media/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+*.env
+
+# Migrations (optional, you can track them if needed)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+
+# Cache files
+*.cache
+*.mo
+*.pid
+
+# Node modules (if you use frontend assets)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Compiled files
+dist/
+build/
+
+# MacOS system files
+.DS_Store

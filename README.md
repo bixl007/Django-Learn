@@ -7,26 +7,26 @@ To get started, follow these steps:
 
 1. **Clone the repository**:
    ```
-   git clone https://github.com/my-username/django-learn.git
+   git clone https://github.com/bixl007/Django-Learn.git
    ```
 
 2. **Set up a virtual environment**:
    ```
-   cd django-learn
-   python3 -m venv env
+   cd Django-learn
+   uv venv
    source env/bin/activate
    ```
    This creates an isolated Python environment for my project.
 
 3. **Install the requirements**:
    ```
-   pip install -r requirements.txt
+   uv pip install -r requirements.txt
    ```
    This installs the necessary Python packages for the Django projects.
 
 4. **Start the development server**:
    ```
-   cd project_directory
+   cd djangoBE
    python manage.py runserver
    ```
    This starts the Django development server, which my can access at `http://127.0.0.1:8000`.
