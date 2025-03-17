@@ -5,6 +5,20 @@
 {% endblock %}
 
 {% block content %}
-    <h1>All Chai</h1>
-    <p>Here are all the chai we have:</p>
+<h1>All Chai</h1>
+<p>Here are all the chai we have:</p>
+<div class="grid grid-cols-3 gap-4">
+    {% for chai in chais %}
+    <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center gap-2">
+        <img src="{{chai.image.url}}" alt="" width="550" height="550">
+        <p class="text-center text-2xl">{{chai.name}}</p>
+        <a href="{%  url "chai_detail" chai.id  %}" class="w-full">
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 w-[100%] text-white font-bold py-2 px-4 rounded">
+                {{chai.type}} - {{chai.id}}
+            </button>
+        </a>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
+
