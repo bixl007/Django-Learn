@@ -14,9 +14,11 @@
     {% tailwind_css %}
 </head>
 <body>
-    <nav>
+    <nav class="bg-gray-800 text-white p-4 text-3xl text-center">
         This is out navbar
     </nav>
-    {% block content %}{% endblock %}
+    <div class="container mx-auto ">
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
